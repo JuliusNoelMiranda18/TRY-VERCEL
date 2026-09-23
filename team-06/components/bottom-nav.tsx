@@ -73,7 +73,7 @@ export function BottomNav() {
   ];
 
   return (
-    <nav className="w-full bg-[#F1E4D1] border-t-2 border-[#4A3B2C]/25 shrink-0 z-40 px-2 sm:px-6 py-2 shadow-[0_-2px_8px_rgba(74,59,44,0.06)]">
+    <nav className="fixed bottom-0 left-0 right-0 w-full bg-[#F1E4D1] border-t-2 border-[#4A3B2C]/25 shrink-0 z-50 px-2 sm:px-6 py-2 shadow-[0_-4px_12px_rgba(74,59,44,0.08)]">
       <div className="max-w-6xl mx-auto flex items-center justify-between gap-1 sm:gap-4">
         
         {/* Brand Logo / Emblem */}
