@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F1E4D1;
+  --foreground: #162660;
+  --royal-blue: #162660;
+  --royal-blue-hover: #121f50;
+  --powder-blue: #D0E6FD;
+  --powder-blue-hover: #b8daf9;
+  --warm-beige: #F1E4D1;
+  --card-bg: #FFFFFF;
+  --dark-border: #4A3B2C;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-royal-blue: var(--royal-blue);
+  --color-powder-blue: var(--powder-blue);
+  --color-warm-beige: var(--warm-beige);
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Aralkada-style Claymorphism utilities */
+.aralkada-card {
+  background-color: #FFFFFF;
+  border: 3px solid #4A3B2C;
+  box-shadow: 0 5px 0 #4A3B2C;
+  border-radius: 20px;
+}
+
+.aralkada-card-beige {
+  background-color: #E8DAC4;
+  border: 3px solid #4A3B2C;
+  box-shadow: 0 4px 0 #4A3B2C;
+  border-radius: 16px;
+}
+
+.aralkada-btn-primary {
+  background-color: #162660;
+  color: #F1E4D1;
+  border: 3px solid #0D1638;
+  box-shadow: 0 5px 0 #0D1638;
+  border-radius: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease;
+}
+
+.aralkada-btn-primary:hover {
+  background-color: #121F50;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 0 #0D1638;
+}
+
+.aralkada-btn-primary:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #0D1638;
+}
+
+.aralkada-btn-secondary {
+  background-color: #D0E6FD;
+  color: #162660;
+  border: 3px solid #162660;
+  box-shadow: 0 4px 0 #162660;
+  border-radius: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease;
+}
+
+.aralkada-btn-secondary:hover {
+  background-color: #B8DAF9;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 #162660;
+}
+
+.aralkada-btn-secondary:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #162660;
+}
+
+.aralkada-btn-outline {
+  background-color: #F1E4D1;
+  color: #162660;
+  border: 3px solid #162660;
+  box-shadow: 0 4px 0 #162660;
+  border-radius: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease;
+}
+
+.aralkada-btn-outline:hover {
+  background-color: #E6D4BA;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 #162660;
+}
+
+.aralkada-btn-outline:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #162660;
+}
+
+.aralkada-input {
+  background-color: #F8F1E5;
+  border: 2px solid #4A3B2C;
+  border-radius: 14px;
+  color: #162660;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+
+.aralkada-input:focus {
+  outline: none;
+  border-color: #162660;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(22, 38, 96, 0.2);
+}
+
+/* Hide native number input spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Custom Select Dropdown */
+.aralkada-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #F8F1E5;
+  border: 2px solid #4A3B2C;
+  border-radius: 14px;
+  color: #162660;
+  font-weight: 800;
+  font-size: 0.8125rem;
+  padding: 0.625rem 2.25rem 0.625rem 0.875rem;
+  box-shadow: 0 2px 0 #4A3B2C;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.aralkada-select:hover {
+  background-color: #F1E4D1;
+  border-color: #162660;
+}
+
+.aralkada-select:focus {
+  outline: none;
+  border-color: #162660;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(22, 38, 96, 0.2);
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
