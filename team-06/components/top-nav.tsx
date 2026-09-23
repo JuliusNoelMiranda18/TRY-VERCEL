@@ -1,1 +1,2 @@
-export { SideNav as TopNav, SideNav } from "./side-nav";
+export { BottomNav as TopNav, BottomNav } from "./bottom-nav";
+export { SideNav } from "./side-nav";
